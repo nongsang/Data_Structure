@@ -19,13 +19,13 @@ typedef struct __ArrayList
 /*** ArrayList와 관련된 연산들 ****/
 typedef ArrayList List;
 
-void ListInit(List * plist);
-void LInsert(List * plist, LData data);
+void ListInit(List * plist);				// 리스트 초기화
+void LInsert(List * plist, LData data);		// 데이터 삽입
 
-int LFirst(List * plist, LData * pdata);
-int LNext(List * plist, LData * pdata);
+int LFirst(List * plist, LData * pdata);	// 첫번째 데이터 검색
+int LNext(List * plist, LData * pdata);		// 이후 데이터 검색
 
-LData LRemove(List * plist);
-int LCount(List * plist);
+LData LRemove(List * plist);				// 데이터 삭제
+int LCount(List * plist);					// 데이터 갯수 조회
 
 #endif

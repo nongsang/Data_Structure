@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "ArrayList.h"
+#include "array_list.h"
 
 int main(void)
 {
